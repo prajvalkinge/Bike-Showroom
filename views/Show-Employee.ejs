@@ -1,0 +1,55 @@
+
+<%- include("header") -%>
+    
+<h1 class="display-3 heading">Show-Employee</h1>
+
+
+<div class="form_inline">
+
+    <form class="form-inline"action="/Show-Employee.ejs" method="POST">
+       
+        <div class="form-group mx-sm-3 mb-2">
+            <input type="search" class="form-control" name="Emp_name" placeholder="Employee-Name" autocomplete="on">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Search</button>
+        
+    </form>
+</div>
+      
+        <form class="form " action="Show-Employee.ejs" method="GET"> 
+       
+       <h4 id="h6">
+        <br>
+      
+        <div>
+       Employee-id : <%= data.Employee_id %> 
+        </div>
+        <br>
+        <div>
+          <h3> Employee-Name  :  <%= data.Employee_Name %> 
+        </div>
+        <br>
+        <div>
+            Employee-Address  :  <%= data.Address %> 
+        </div>
+        <br>
+        <div>
+            Email  :  <%= data.Email %> 
+        </div>
+          <br>
+        <div>
+            Date-of-Joining  :  <%= data.Date_of_Joining %>
+        </div>
+        <br>
+        <div>
+         Salary  :  <%= data.Salary %> 
+        </div>
+        <br>
+        <div>
+             Description  :  <textarea  cols="30" rows="3"   ><%= data.Description %> </textarea>
+        </div>
+       </h4>
+    </form>
+
+
+<%- include("footer") -%>

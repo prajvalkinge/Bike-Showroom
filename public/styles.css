@@ -1,0 +1,135 @@
+
+.logo{
+   padding: 0%;
+padding-left: 2%;
+   padding-bottom: 0%;
+   float: left;
+   border-radius: 25%;
+}
+
+.nav {
+    
+ margin-left: 20%;
+ margin-right: 10%;
+    background-color: #40394a;
+}
+
+.nav-pills{
+    padding-top: 5%;
+    /* float:right; */
+}
+.navbar-brand{
+    float:left;
+}
+.heading{
+    text-align: center;
+   
+    padding : 6%;
+ 
+    font-family: 'Dancing Script', cursive;
+    color: crimson;
+    font-size: 3.5rem;
+}
+
+.top-container{
+    /* background-color:#ffd3b4; */
+    padding-top: 2%;
+}
+.middle{
+  margin: auto;
+    
+     padding: 5% 25%; 
+}
+.middle-container{
+    margin: 0%;
+    /* background-color: #ffd3b4; */
+}
+.images{
+    border-radius: 25%;
+}
+
+.bottom-container{
+    margin: 0%;
+    padding-top:5%;
+    padding-bottom: 5%;
+    /* background-color: #ffd3b4; */
+}
+.info{
+    margin: 5% 20%;
+    padding: 5% 10%;
+    border: dashed;
+    border-width: 2px 4px;
+    border-radius: 10px 100px / 120px;
+  
+    background-color:#ffaaa7;
+    text-align: left;
+    font-size: large;
+    font-weight:lighter;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#btm-img{
+    border-radius: 100%;
+    width: 70%;
+    height: 30%;
+}
+
+#footer{
+    background-color:#40394a;
+    color: aliceblue;
+    text-align: center;
+    padding: 5% 10%;
+}
+
+.social-icon{
+    padding: 3% 2%;
+}
+
+
+
+/* add-customer-dta */
+
+#h6 {
+    line-height: 3rem;
+    font-weight: 700;
+}
+
+.form{
+
+    background: color #e4e9fd;
+    background-image: -webkit-linear-gradient(40deg,#a683e3 50%,#e4e9fd);
+    min-height: 1000px; 
+    
+       text-align: left;
+       padding-left: 10%;
+       padding-top: 2%;
+       padding-bottom: 2%;
+     margin: 5% 20%;
+     height: 50%;
+      border: dashed;
+     border-width: 2px 4px;
+     border-radius: 10px 100px / 120px;
+}
+.form_inline{
+   
+    padding-left: 30%;
+}
+
+/* Quatation */
+
+.search-Quatation{
+    padding-left: 30%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+
+
+/* review */
+
+.writereviewbanner{
+    background: url(&quot;https://bd.gaadicdn.com/pwa/img/writereviewbanner.jpg&quot;) center center no-repeat;
+    height: auto;
+    width: auto;
+}

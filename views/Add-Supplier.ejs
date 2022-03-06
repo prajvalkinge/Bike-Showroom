@@ -1,0 +1,57 @@
+
+<%- include("header") -%>
+    
+<h1 class="display-3 heading">Add_Supplier</h1>
+
+    <form class="form " action="/Add-Supplier.ejs" method="POST">
+        <br>  
+        <br>  
+        <h4 id="h6">
+        <div>
+        Supplier-id : <input type="number" name="No"  placeholder="Enter Id">
+        </div>
+        <br>
+        <div>
+          Supplier-Name :<input type="text" name="myName" id="name" placeholder="Enter Name">
+        </div>
+        <br>
+        <div>
+        Address : <textarea name="myaddress" id="Customer-address" cols="30" rows="3" placeholder="Enter Adress"></textarea>
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail" placeholder="abc@gmail.com">
+        </div>
+        <br>
+        <div>
+           Contact  : <input type="number" name="contact" placeholder="contact">
+        </div>
+        <br>
+        <div>
+            Date-of-Supply  : <input type="date" name="myDate">
+        </div>
+        <br>
+       
+        <br>
+        <div>
+            <label for="Bike">Bike-Supply  :</label>
+            <select name="Bike_Supply" id="Bike">
+                <option value="royal-enfield-classic-350">Royal-Enfield-classic-350</option>
+                <option value="royal-enfield-classic-satin" selected>Royal-Enfield-Elassic-Eatin</option>
+                <option value="Royal-enfield-Himalya" selected>Royal-enfield-Himalya</option>
+            </select>
+        </div>
+        <br>
+        
+
+        <div>
+            <input class="btn btn-success" type="submit" value="Submit Now">
+            
+        </div>
+        <br>
+        </h4>
+      
+    </form>
+
+
+<%- include("footer") -%>

@@ -1,0 +1,59 @@
+
+<%- include("header") -%>
+    
+<h1 class="display-3 heading">Show-Sales</h1>
+
+
+<div class="form_inline">
+
+    <form class="form-inline"action="/Show-Sales.ejs" method="POST">
+       
+        <div class="form-group mx-sm-3 mb-2">
+            <input type="search" class="form-control" name="Sales_id" placeholder="Sales-id" autocomplete="on">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Search</button>
+        
+    </form>
+</div>
+      
+        <form class="form " action='Show-Sales.ejs' method="GET"> 
+       
+       <h4 id="h6">
+        <br>
+      
+        <div>
+               Sales-id : <%= data.Sales_id %> 
+        </div>
+        <br>
+        <div>
+            Sales_Date  :  <%= data.Sales_Date %> 
+        </div>
+        <br>
+        <div>
+            Customer_No  :  <%= data.Customer_No %> 
+        </div>
+        <br>
+        <div>
+            Price  :  <%= data.Price %> 
+        </div>
+        <br>
+        <div>
+           Bike_id  :  <%= data.Bike_id %> 
+        </div>
+          <br>
+        <div>
+            Bike_Name  :  <%= data.Bike_Name %>
+        </div>
+        <br>
+        <div>
+           No-of-Bike  : <%= data.No_of_Bike %> 
+        </div>
+        <br>
+        <div>
+           Payment_Mode  : <%= data.Payment_Mode %> 
+        </div>
+       </h4>
+    </form>
+
+
+<%- include("footer") -%>

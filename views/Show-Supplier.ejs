@@ -1,0 +1,55 @@
+
+<%- include("header") -%>
+    
+<h1 class="display-3 heading">Show-Supplier</h1>
+
+
+<div class="form_inline">
+
+    <form class="form-inline"action="/Show-Supplier.ejs" method="POST">
+       
+        <div class="form-group mx-sm-3 mb-2">
+            <input type="search" class="form-control" name="Supp_name" placeholder="Supplier-Name" autocomplete="on">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Search</button>
+        
+    </form>
+</div>
+      
+        <form class="form " action='Show-Supplier' method="GET"> 
+       
+       <h4 id="h6">
+        <br>
+      
+        <div>
+               Supplier-id : <%= data.Supplier_id %> 
+        </div>
+        <br>
+        <div>
+            Supplier-Name  :  <%= data.Supplier_Name %> 
+        </div>
+        <br>
+        <div>
+            Supplier-Address  :  <%= data.Address %> 
+        </div>
+        <br>
+        <div>
+            Email  :  <%= data.Email %> 
+        </div>
+        <br>
+        <div>
+         Contact  :  <%= data.Contact %> 
+        </div>
+          <br>
+        <div>
+            Date-of-Supply  :  <%= data.Date_of_Supply %>
+        </div>
+        <br>
+        <div>
+           Bike-Supply  : <%= data.Bike_Supply %> 
+        </div>
+       </h4>
+    </form>
+
+
+<%- include("footer") -%>

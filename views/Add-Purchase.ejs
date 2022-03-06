@@ -1,0 +1,48 @@
+
+<%- include("header") -%>
+    
+<h1 class="display-3 heading">Add_Purchase_Detail</h1>
+
+    <form class="form " action="/Add-Purchase.ejs" method="POST">
+        <br>  
+        <br>  
+        <h4 id="h6">
+        <div>
+          Purchase-id : <input type="number" name="No"  placeholder="Enter Id">
+        </div>
+        <br>
+        <div>
+            Date-of-Purchase  : <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+          Supplier-Name :<input type="text" name="myName" id="name" placeholder="Enter Name">
+        </div>
+        <br>
+        <div>
+            <label for="Bike">Bike-Name  :</label>
+            <select name="Bike_Name" id="Bike">
+                <option value="royal-enfield-classic-350">Royal-Enfield-classic-350</option>
+                <option value="royal-enfield-classic-satin" selected>Royal-Enfield-Elassic-Eatin</option>
+                <option value="Royal-enfield-Himalya" selected>Royal-enfield-Himalya</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Bike_Quantity : <input type="number" name="Bike_Quantity"  placeholder="Bike_Quantity">
+        </div>
+
+        <br>
+        
+
+        <div>
+            <input class="btn btn-success" type="submit" value="Submit Now">
+            
+        </div>
+        <br>
+        </h4>
+      
+    </form>
+
+
+<%- include("footer") -%>

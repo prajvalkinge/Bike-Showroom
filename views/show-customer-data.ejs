@@ -1,0 +1,61 @@
+
+<%- include("header") -%>
+    
+<h1 class="display-3 heading">show-customer_Detail</h1>
+
+
+<div class="form_inline">
+
+    <form class="form-inline"action="/show-customer-data.ejs" method="POST">
+       
+        <div class="form-group mx-sm-3 mb-2">
+            <input type="search" class="form-control" name="input_name" placeholder="Customer-Name" autocomplete="on">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Search</button>
+        
+    </form>
+</div>
+      
+        <form class="form " action="show-customer-data.ejs" method="GET"> 
+       
+       
+        <br>
+        <br>    
+        <div>
+        <h3>  Customer-No : <%= data.Customer_No %> </h3> 
+        </div>
+        <br>
+        <br>
+        <div>
+          <h3> Customer-Name  :  <%= data.Customer_Name %> </h3> 
+        </div>
+        <br>
+        <br>
+        <div>
+            <h3>Customer-Address  :  <%= data.Address %> </h3>
+        </div>
+        <br>
+        <br>
+        <div>
+            <h3>Email  :  <%= data.Email %>  </h3>
+        </div>
+          <br>
+        <br>
+        <div>
+            <h3>Date  :  <%= data.Date %></h3>
+        </div>
+        <br>
+        <br>
+        <div>
+          <h3> Bike  :  <%= data.Bike %> </h3>
+        </div>
+        <br>
+        <br>
+        <div>
+            <h3>Write Description  :  <textarea  cols="30" rows="3"   ><%= data.Description %> </textarea></h3> 
+        </div>
+
+    </form>
+
+
+<%- include("footer") -%>

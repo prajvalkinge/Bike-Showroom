@@ -1,0 +1,75 @@
+
+<%- include("header") -%>
+    
+<!-- <h1 class="display-3 heading">Add-Quatation</h1> -->
+
+    <form class="form " action="/Add-Quatation.ejs" method="POST">
+        <br>  
+        <fieldset> 
+            <legend><h1>Add-Quatation</h1></legend>
+        <br>  
+        <h6 id="h6">
+        <div>
+        Bike-id  : <input type="number" name="Bike_id"  placeholder="Enter Id">
+        </div>
+        <br>
+        <div>
+            <label for="Bike">Bike-Name  :</label>
+            <select name="Bike_Name" id="Bike">
+                <option value="royal-enfield-classic-350">Royal-Enfield-classic-350</option>
+                <option value="royal-enfield-classic-satin" selected>Royal-Enfield-Elassic-Eatin</option>
+                <option value="Royal-enfield-Himalya" selected>Royal-enfield-Himalya</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Price  :  <input type="number" name="Price"> 
+        </div>
+        <br>
+        <div>
+            <label for="Bike">No. of cylinder  :</label>
+            <select name="No_of_cylinder" id="Bike">
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="colours">Bike-colors  :</label>
+            <select name="Bike_colors" id="Bike">
+                <option value="red">Red</option>
+                <option value="blue" >Blue</option>
+                <option value="grey" selected>Grey</option>
+            </select>
+        </div>
+        <br>
+        <div>
+           Fuel Capacity: <input type="number" name="fuel_capacity" placeholder="fuel-capacity">
+        </div>
+
+        <br>
+        <div>
+            Engine-Type  : <textarea name="engine_type" cols="30" rows="3"></textarea>
+        </div>
+        <br>
+       
+        <br>
+        <div>
+           Ground-Clearance  :  <input type="number" name="ground_clearance">
+        </div>
+        <br>
+        <div>
+            Braking  :  <input type="text" name="braking">
+        </div>
+        <br>
+        <div>
+            <input class="btn btn-success" type="submit" value="Submit Now">
+            
+        </div>
+        <br>
+        </h6>
+        </fieldset>
+    </form>
+
+
+<%- include("footer") -%>

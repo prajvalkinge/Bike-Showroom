@@ -1,0 +1,34 @@
+<%- include('header') -%>
+
+
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Employee-id</th>
+        <th scope="col">Employee_Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Email</th>
+        <th scope="col"> Date-of-Joining</th>
+        <th scope="col">Salary</th>
+        <th scope="col"> Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.forEach(data => { %>
+            <tr>
+                
+                <td><%= data.Employee_id %></td>
+                <td><%= data.Employee_Name %></td>
+                <td><%= data.Address %></td>
+                <td><%= data.Email %></td>
+                <td><%= data.Date_of_Joining %></td>
+                <td><%= data.Salary %></td>
+                <td><%= data.Description %></td>
+                
+              </tr>
+      <%  }) %>
+     
+  </table>
+
+<%- include('footer') -%>

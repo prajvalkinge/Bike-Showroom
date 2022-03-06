@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  /* background-color: pink;   */
+}  
+button {   
+       background-color: #4CAF50;   
+       /* width: 100%;   */
+        color: #fff;   
+        padding: 20px; 
+        padding-left: 10%;
+        padding-right: 10%; 
+        margin: 2% 25%;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 2px dotted #f1f1f1; 
+        margin: 5% 15%;  
+    }   
+ input[type=email], input[type=password] {   
+        /* width: 100%;    */
+        margin: 18px 20px;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+   
+        
+     
+ .container {   
+   padding: 20px;
+        padding-left: 10%;   
+        background-color: lightblue;  
+        margin: 5% 20%;
+    }   
+    .E1{
+      height: 20%;
+      width: 30%;
+    }
+</style>   
+</head>    
+<body>    
+  <form action='sign-in' method="post" > 
+    <img class="E1" src="/images/royal-enfield-classic-satin-royal-enfield-motorcycle-logo.png" alt=""> 
+    <div class="container">   
+          <h1 style="padding-left: 20%;">  Login Form </h1>    
+            <label>Username : </label>   
+            <input type="email" placeholder="Enter email" name="email" required>
+            <br>  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <br>
+            <button type="submit">Login</button>   
+        </div>   
+    </form>     
+</body>     
+</html>  

@@ -1,0 +1,54 @@
+
+<%- include("header") -%>
+    
+<h1 class="display-3 heading">Add_Employee</h1>
+
+    <form class="form " action="/Add-Employee.ejs" method="POST">
+        <br>  
+        <br>  
+        <h4 id="h6">
+        <div>
+          Employee-id : <input type="number" name="No"  placeholder="Enter Id">
+        </div>
+        <br>
+        <div>
+           Employee-Name :<input type="text" name="myName" id="name" placeholder="Enter Name">
+        </div>
+        <br>
+        <div>
+            Employee-Address : <textarea name="myaddress" id="Customer-address" cols="30" rows="3" placeholder="Enter Customer Adress"></textarea>
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail" placeholder="abc@gmail.com">
+        </div>
+
+        <br>
+        <div>
+            Date-of-Joining  : <input type="date" name="myDate">
+        </div>
+        <br>
+       
+        <br>
+        <div>
+           Salary  : <input type="number" name="Salary" placeholder="Salary">
+        </div>
+        <br>
+        <div>
+            Write Description: <br><textarea name="myText" cols="30" rows="3"></textarea>
+        </div>
+
+        <br>
+        
+
+        <div>
+            <input class="btn btn-success" type="submit" value="Submit Now">
+            
+        </div>
+        <br>
+        </h4>
+      
+    </form>
+
+
+<%- include("footer") -%>

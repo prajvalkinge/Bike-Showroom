@@ -1,0 +1,70 @@
+
+<%- include("header") -%>
+    
+<!-- <h1 class="display-3 heading">Add-Quatation</h1> -->
+
+
+         <div class="form_inline">
+    
+            <form class="form-inline" action="/Show-Quatation.ejs" method="POST">
+               
+                <div class="form-group mx-sm-3 mb-2">
+                    <input type="search" class="form-control" name="B_name" placeholder="Bike-Name" autocomplete="on">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Search</button>
+                
+            </form>
+        </div>
+     
+
+    
+    <form class="form " action="/Show-Quatation.ejs" method="GET">
+        <br>  
+        <fieldset> 
+            <legend><h1>Quatation</h1></legend>
+        <br>  
+        <h4 id="h6">
+        <div>
+        Bike-id   :  <%= data.Bike_id %>
+        </div>
+        <br>
+        <div>
+        Bike-Name   :   <%= data.Bike_Name %>   
+        </div>
+        <br>
+        <div>
+            Price  :   <%= data.Price %>
+        </div>
+        <br>
+        <div>
+            No. of cylinder  :   <%= data.No_of_cylinder %>
+        </div>
+        <br>
+        <div>
+            Bike-colors  :   <%= data.Bike_colors %>
+        </div>
+        <br>
+        <div>
+           Fuel Capacity  :   <%= data.fuel_capacity %>
+        </div>
+
+        <br>
+        <div>
+            Engine-Type  :  <%= data.engine_type %>
+        </div>
+        <br>
+        <br>
+        <div>
+           Ground-Clearance  :   <%= data.ground_clearance %>
+        </div>
+        <br>
+        <div>
+            Braking  :    <%= data.braking %>
+        </div>
+        <br>
+        </h4>
+        </fieldset>
+    </form>
+
+
+<%- include("footer") -%>

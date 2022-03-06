@@ -1,0 +1,64 @@
+
+<%- include("header") -%>
+    
+<h1 class="display-3 heading">Add_Salse</h1>
+
+    <form class="form " action="/Add-Sales.ejs" method="POST">
+        <br>  
+        <br>  
+        <h4 id="h6">
+        <div>
+        Sales-id : <input type="number" name="No"  placeholder="Enter Id">
+        </div>
+        <br>
+        <div>
+            Sales_Date  : <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+          Customer_No :<input type="number" name="Customer_No"  placeholder="Customer_No">
+        </div>
+        <br>
+        <div>
+         Price : <input type='number' name="Price" placeholder="Price">
+        </div>
+        <br>
+        <div>
+            Bike_id  : <input type="number" name="Bike_id" placeholder="Bike_id">
+         </div>
+    
+        <br>
+        <div>
+            <label for="Bike">Bike_Name :</label>
+            <select name="Bike_Name" id="Bike">
+                <option value="royal-enfield-classic-350">Royal-Enfield-classic-350</option>
+                <option value="royal-enfield-classic-satin" selected>Royal-Enfield-Elassic-Eatin</option>
+                <option value="Royal-enfield-Himalya" selected>Royal-enfield-Himalya</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            No_of_Bike : <input type="number" name="No_of_Bike" placeholder="Quantity">
+        </div>
+        <br>
+        <div>
+            <label for="Payment_Mode">Payment_Mode :</label>
+            <select name="Payment_Mode" >
+                <option value="Cash">Cash</option>
+                <option value="Debit/Credit_Card" selected>Card</option>
+                <option value="Cheque" selected>Cheque</option>
+            </select>
+        </div>
+        
+
+        <div>
+            <input class="btn btn-success" type="submit" value="Submit Now">
+            
+        </div>
+        <br>
+        </h4>
+      
+    </form>
+
+
+<%- include("footer") -%>

@@ -1,0 +1,49 @@
+
+<%- include("header") -%>
+    
+<h1 class="display-3 heading">Purchase-Detail</h1>
+
+
+<div class="form_inline">
+
+    <form class="form-inline"action="/Show-Purchase.ejs" method="POST">
+       
+        <div class="form-group mx-sm-3 mb-2">
+            <input type="search" class="form-control" name="Supp_name" placeholder="Purchase_id" autocomplete="on">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Search</button>
+        
+    </form>
+</div>
+      
+        <form class="form " action='Show-Purchase.ejs' method="GET"> 
+       
+       <h4 id="h6">
+        <br>
+      
+        <div>
+               Purchase-id : <%= data.Purchase_id %> 
+        </div>
+        <br>
+        <div>
+            Date-of-Purchase  :  <%= data.Date_of_Purchase %>
+        </div>
+        <br>
+        <div>
+            Supplier-Name  :  <%= data.Supplier_Name %> 
+        </div>
+        <br>
+        <div>
+         Bike_Name  :  <%= data.Bike_Name %> 
+        </div>
+        <br>
+        <div>
+            Bike_Quantity  :  <%= data.Bike_Quantity %> 
+        </div>
+        <br>
+       
+       </h4>
+    </form>
+
+
+<%- include("footer") -%>
